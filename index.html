@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mover Objeto con Blockly</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Load Blockly core -->
+  <script src="blockly_compressed.js"></script>
+  <script src="https://unpkg.com/blockly/blocks_compressed.js"></script>
+  <!-- Load a generator -->
+  <script src="https://unpkg.com/blockly/javascript_compressed.js"></script>
+  <!-- Load a message file -->
+  <script src="https://unpkg.com/blockly/msg/en.js"></script>
+
+</head>
+<body>
+  <h1>Usando Blockly en Escuela 4.0</h1>
+  <div style="float: left;">
+    <div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+    <button onclick="resetPosition()">Reiniciar</button>
+    <button onclick="runCode()" style="margin-top: 10px;">Ejecutar</button>
+  </div>
+  <div id="escenario-container">
+    <div id="escenario">
+      <div id="objeto"></div>
+    </div>
+  </div>
+
+  
+  <!-- Incluir tu script JavaScript -->
+  <script src="code.js"></script>
+</body>
+</html>
