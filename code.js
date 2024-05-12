@@ -1,7 +1,7 @@
 // Función para mover el objeto hacia adelante
 function moveForward() {
     var objeto = document.getElementById('objeto');
-    var currentTop = parseInt(objeto.style.top) || 0;
+    var currentTop = parseInt(objeto.style.top);
     objeto.style.top = (currentTop + 10) + 'px';
   }
   
