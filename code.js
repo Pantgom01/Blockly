@@ -77,7 +77,12 @@ function resetPosition() {
     var objeto = document.getElementById('objeto');
     objeto.style.top = '50px';
   }
-  
+
+// Añadir un event listener para el evento DOMContentLoaded
+document.addEventListener("DOMContentLoaded", function() {
+    resetPosition(); // Llamar a la función resetPosition una vez que el DOM esté cargado
+});
+
 // Crear Blockly workspace en el div con id "blocklyDiv"
 var workspace = Blockly.inject('blocklyDiv', {
     toolbox: '<xml>' +
