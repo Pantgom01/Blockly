@@ -81,6 +81,7 @@ function resetPosition() {
 // Añadir un event listener para el evento DOMContentLoaded
 document.addEventListener("DOMContentLoaded", function() {
     resetPosition(); // Llamar a la función resetPosition una vez que el DOM esté cargado
+    console.log("Reset DONE");
 });
 
 // Crear Blockly workspace en el div con id "blocklyDiv"
